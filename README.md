@@ -12,7 +12,7 @@
 
 This task demonstrates the process of publishing a containerised Node.js microservice (LOOPII app) to a private container registry on Google Cloud (Artifact Registry) and verifying that it runs from the published image.
 
-**Technology Stack**
+## Technology Stack**
 
 **Component	Description**
 
@@ -26,7 +26,7 @@ This task demonstrates the process of publishing a containerised Node.js microse
 
 --> Google Cloud SDK	CLI tool for GCP interaction
 
-**Step-by-Step Instructions**
+## Step-by-Step Instructions**
 
 **Step 1: Create a Private Container Registry on Google Cloud**
 
@@ -94,9 +94,9 @@ Background image
 
 doll GIF
 
-**Summary of Docker Commands Used**
+## Summary of Docker Commands Used**
 
-# Authenticate
+**Authenticate**
 
 gcloud auth login
 
@@ -104,27 +104,17 @@ gcloud config set project project_id
 
 gcloud auth configure-docker australia-southeast2-docker.pkg.dev
 
-# Tag and push
+**Tag and push**
 
 docker tag loopii-backend-loopii australia-southeast2-docker.pkg.dev/project_id/microservices/loopii-backend-loopii:latest
 
 docker push australia-southeast2-docker.pkg.dev/project_id/microservices/loopii-backend-loopii:latest
 
-# Run from registry
+**Run from registry**
 
 docker run -p 3040:3040 australia-southeast2-docker.pkg.dev/project_id/microservices/loopii-backend-loopii:latest
 
-## GitHub Repo Structure
-
-sit737-2025-prac5d/
-  
-  Dockerfile
-  
-  index.js
-  
-  package.json
-  
-  public/
+--> App runs successfully on http://localhost:3040 and displays the LOOPII welcome screen.
   
   background.jpg
 
