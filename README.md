@@ -28,7 +28,7 @@ This task demonstrates the process of publishing a containerised Node.js microse
 
 **Step-by-Step Instructions**
 
-Step 1: Create a Private Container Registry on Google Cloud
+**Step 1: Create a Private Container Registry on Google Cloud**
 
 Go to: https://console.cloud.google.com/artifacts
 
@@ -50,7 +50,7 @@ Click Create
 
 Your registry URL becomes: australia-southeast2-docker.pkg.dev/project_id/microservices
 
-Step 2: Authenticate Docker with the Registry
+**Step 2: Authenticate Docker with the Registry**
 
 Instead of using docker login, Google Cloud uses its CLI to link Docker with GCP:
 
@@ -62,7 +62,7 @@ gcloud auth configure-docker australia-southeast2-docker.pkg.dev
 
 --> This allows Docker to push images securely to your registry using your GCP credentials.
 
-Step 3: Tag the Docker Image
+**Step 3: Tag the Docker Image**
 
 Tag your local Docker image to match the private registry's format:
 
@@ -70,7 +70,7 @@ docker tag loopii-backend-loopii australia-southeast2-docker.pkg.dev/product_id/
 
 --> This prepares your image for cloud upload.
 
-Step 4: Push the Image to the Registry
+**Step 4: Push the Image to the Registry**
 
 Now publish your Docker image to Google Cloud:
 
@@ -78,7 +78,7 @@ docker push australia-southeast2-docker.pkg.dev/project_id/microservices/loopii-
 
 --> Once successful, your image will be hosted securely in Artifact Registry.
 
-Step 5: Run the Image from the Cloud Registry
+**Step 5: Run the Image from the Cloud Registry**
 
 To verify deployment, pull and run the image from Google Cloud:
 
