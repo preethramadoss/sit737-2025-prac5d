@@ -94,7 +94,7 @@ Background image
 
 doll GIF
 
-Summary of Docker Commands Used
+**Summary of Docker Commands Used**
 
 # Authenticate
 
