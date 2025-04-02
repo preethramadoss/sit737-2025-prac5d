@@ -115,9 +115,3 @@ docker push australia-southeast2-docker.pkg.dev/project_id/microservices/loopii-
 docker run -p 3040:3040 australia-southeast2-docker.pkg.dev/project_id/microservices/loopii-backend-loopii:latest
 
 --> App runs successfully on http://localhost:3040 and displays the LOOPII welcome screen.
-  
-  background.jpg
-
-    doll.gif 
-  
-  README.md
