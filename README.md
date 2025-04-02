@@ -1,6 +1,6 @@
 ## SIT737 – Task 5.2D
 
-## Title: Deploying LOOPII Microservice to Google Cloud Private Container Registry
+## Title:  Dockerization- Publishing the microservice into the cloud 
 
 ## Student: Preeth Ramadoss
 
